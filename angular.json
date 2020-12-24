@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "dados-angular"
+  "defaultProject": "dados-angular",
+  "cli": {
+    "analytics": false
+  }
 }
