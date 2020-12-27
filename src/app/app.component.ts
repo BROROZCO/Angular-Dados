@@ -14,8 +14,9 @@ export class AppComponent {
   numero2 = 0;
   
   tirarDados() : void {
-    this.numero1 = Math.random();
-    this.numero2 = Math.random();
+    // PAra eviar Cero se multiplica por 5 y se suma 1
+    this.numero1 = Math.round( Math.random() * 5) + 1;
+    this.numero2 = Math.round( Math.random() * 5) + 1;
     console.log(this.numero1);
     console.log(this.numero2);
 
