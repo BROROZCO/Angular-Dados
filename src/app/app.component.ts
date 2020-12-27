@@ -8,10 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   dadoIzquierdo = "../assets/img/dice1.png";
-  dadoDerecho = "../assets/img/dice1.png";
+  dadoDerecho = "../assets/img/dice4.png";
  
-  numero1 = 0;
-  numero2 = 0;
+  // Inciado de esa manera por el *ngIf -> para eviar el label ganaste al inicio
+
+  numero1 = 1;
+  numero2 = 4;
   
   tirarDados() : void {
     // Para eviar Cero se multiplica por 5 y se suma 1
