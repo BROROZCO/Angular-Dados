@@ -8,17 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   dadoIzquierdo = "../assets/img/dice1.png";
-  dadoDerecho = "../assets/img/dice4.png";
+  dadoDerecho = "../assets/img/dice1.png";
  
   numero1 = 0;
   numero2 = 0;
   
   tirarDados() : void {
-    // PAra eviar Cero se multiplica por 5 y se suma 1
+    // Para eviar Cero se multiplica por 5 y se suma 1
     this.numero1 = Math.round( Math.random() * 5) + 1;
     this.numero2 = Math.round( Math.random() * 5) + 1;
-    console.log(this.numero1);
-    console.log(this.numero2);
+    this.dadoIzquierdo = '../assets/img/dice'+ this.numero1 + '.png';
+    this.dadoDerecho = '../assets/img/dice'+ this.numero2 + '.png';
 
   }
 
