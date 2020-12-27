@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'dados-angular';
+
+  dadoIzquierdo = "../assets/img/dice1.png";
+  dadoDerecho = "../assets/img/dice4.png";
+
 }
